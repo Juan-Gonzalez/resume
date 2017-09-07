@@ -1,11 +1,14 @@
 .myNavBar {
-    background-color: #535353;
+    background-color: #ffffff;
+    font-family: Montserrat;
 
 }
 
+/*
 .navBarText {
     font-family: Montserrat;
 }
+*/
 
 .jumbotron {
     text-align: center;
@@ -15,11 +18,14 @@
 
 .nameSection {
     background-color: #e3ecfc;
+    font-weight: 900;
 }
 
 .headers {
+    font-family: Comfortaa;
     color:#242c3a;
     font-weight: 700;
+
 }
 .summary {
     font-family: Comfortaa;
@@ -30,11 +36,103 @@
 .coreCompetences {
     font-family: Comfortaa;
     text-align: justify;
-    margin-top: 1rem;
+    margin-top: 1rem;    
 }
 
-.coreList{
-    text-decoration: none;
+.corelist ul {
     list-style: none;
-    height: 5px;
+}
+
+.experience {
+    font-family: Comfortaa;
+    text-align: justify;
+    margin-top: 3rem;    
+    
+}
+
+.education {
+    font-family: Comfortaa;
+    text-align: justify;
+    margin-top: 3rem;    
+    
+}
+
+.skills {
+    font-family: Comfortaa;
+    text-align: justify;
+    margin-top: 3rem; 
+}
+
+.awards {
+    font-family: Comfortaa;
+    text-align: justify;
+    margin-top: 3rem; 
+}
+
+.extra{
+    font-family: Comfortaa;
+    text-align: justify;
+    margin-top: 3rem; 
+}
+
+.footer { 
+    font-family: Comfortaa;
+    text-align: left;
+    margin-top: 3rem; 
+    background-color: #e3ecfc;
+    padding-top: 1rem;
+    
+}
+
+
+.expColumns {
+    margin-top: 1%;
+}
+
+.expButtons {
+    color: #242c3a;
+    background-color: #e3ecfc;
+    font-weight: 400;
+}
+
+.logos {
+    padding-left: 5%;
+    display: block;
+    margin: auto;
+}
+
+.modalHeader {
+    font-family: Comfortaa;
+    font-weight: 700;
+}
+
+.modalContent {
+    font-family: Comfortaa;
+    text-align: justify;
+}
+
+.modalContent.h4.dates{
+    text-align: left;
+}
+
+h5.dates{
+    text-align: center
+}
+
+button.edubotton {
+    display: block;
+    margin: auto;
+}
+
+.eduLogos {
+    margin-top: 3%;
+}
+
+.skillsContent {
+    font-family: Comfortaa;
+    text-align: justify;
+}
+
+.myCards{
+    text-align: center;
 }
