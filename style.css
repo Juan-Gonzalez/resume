@@ -1,0 +1,40 @@
+.myNavBar {
+    background-color: #535353;
+
+}
+
+.navBarText {
+    font-family: Montserrat;
+}
+
+.jumbotron {
+    text-align: center;
+    font-family: Poiret+One; 
+    background: none;
+}
+
+.nameSection {
+    background-color: #e3ecfc;
+}
+
+.headers {
+    color:#242c3a;
+    font-weight: 700;
+}
+.summary {
+    font-family: Comfortaa;
+    text-align: justify;
+    margin-top: 1rem;
+}
+
+.coreCompetences {
+    font-family: Comfortaa;
+    text-align: justify;
+    margin-top: 1rem;
+}
+
+.coreList{
+    text-decoration: none;
+    list-style: none;
+    height: 5px;
+}
