@@ -96,7 +96,6 @@
 }
 
 .logos {
-    padding-left: 5%;
     display: block;
     margin: auto;
 }
@@ -135,4 +134,13 @@ button.edubotton {
 
 .myCards{
     text-align: center;
+}
+
+.fa {
+    padding-left: 10px;
+    color: #ccc;
+}
+
+.footer { 
+    padding-bottom: 3%;
 }
