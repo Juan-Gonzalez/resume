@@ -56,7 +56,7 @@
                  <div class="jumbotron jumbotron-fluid">
                   <div class="container">
                     <h1 class="display-3">Juan Gonzalez Dominguez</h1>
-                    <p class="lead">Resume <a href="assets/Juan%20Gonzalez%20-%20Resume.pdf"><i class="fa fa-download" aria-hidden="true"></i> </a><br>0413 128 086 | gonzalezd.juan@gmail.com | <a href="https://www.linkedin.com/in/juangd/">Linkedin</a></p>
+                    <p class="lead">Resume <a href="assets/Juan%20Gonzalez%20-%20Resume.pdf" target="_blank"><i class="fa fa-download" aria-hidden="true"></i> </a><br>0413 128 086 | gonzalezd.juan@gmail.com | <a href="https://www.linkedin.com/in/juangd/?locale=en_US">Linkedin</a></p>
                   </div>
                 </div>            
             </div>
@@ -68,7 +68,7 @@
                 <div class="col-sm-12 col-md-2"></div> 
                 <div class="col-sm-12 col-md-8">
                     <h1 class="headers">Summary</h1>
-                    <p>ICT Business Analyst focused on facilitating and improving information systems implementations. Efficiently delivering business-oriented solutions through requirements elicitation, system design, testing, training and change management. Strong knowledge of business process management and improvement. Data-oriented decision maker using descriptive and predictive analytics. </p>
+                    <p>ICT Business Analyst with strong data analysis skills (descriptive and predictive). Successfully implemented Information Systems (CRM and Application Systems) through systematic and iterative requirements elicitation, system design, testing, training and change management. Advance knowledge of business process management and improvement. </p>
                 </div> 
                 <div class="col-sm-12 col-md-2"></div> 
             </div>
@@ -345,8 +345,21 @@
                             <div class="d-flex w-100 justify-content-between">
                               <h5 class="mb-1">Web Developoment</h5>
                             </div>
-                            <p class="mb-1">Resume webpage as a subdomain using HTML, CSS and Bootstrap 4</p>
+                            <p class="mb-1">Resume webpage as a subdomain using HTML, CSS, Bootstrap 4, simple POST http request and Zapier</p>
                           </a>
+                            <a class="list-group-item list-group-item-action flex-column align-items-start">
+                            <div class="d-flex w-100 justify-content-between">
+                              <h5 class="mb-1">References</h5>
+                            </div>
+                                
+                                <form id="emailform">
+                                  <div class="form-group">
+                                    <p> Introduce you email address to receive references' contact details</p>
+                                    <input type="email" class="form-control" id="emailToField" aria-describedby="emailHelp" placeholder="Enter email">
+                                      <button type="submit" class="btn btn-primary">Submit</button>
+                                     </div>
+                                  </form> 
+                             </a>
                         </div>
                     </div>
 
@@ -394,10 +407,10 @@
                   <div class="modal-body modalContent">
                    <p>Student support, descriptive analytics and involved in system implementation projects:</p>
                     <h4>[ Sugar CRM Implementation ] </h4><p>
-                    Engaged in the deployment, data verification and testing of Sugar CRM system for outbound marketing activities. Liaison with the provider for implementation of new requirements and adjustment of existing ones. System administrator. Elaboration of final user documentation and training.  </p>
+                    Engaged in the deployment, data verification and testing of Sugar CRM system for outbound marketing activities. Liaison with the provider for implementation of new requirements and adjustment of existing ones. System administrator, backlog management, creation of users, roles, views, permissions and reporting. Data analysis and reporting. Elaboration of final user documentation and training.   </p>
                     
-                      <h4> [ Predictive Analytics Project – Phase 1 ]  </h4>
-                    <p>Understanding the context and providing suggestions about data pre-processing, data variables and possible models to be used.  </p>
+                      <h4> [ Machine Learning Project ]  </h4>
+                    <p>Understanding the context and providing suggestions about data pre-processing, data variables and possible models to be used. Model evaluation and comparison (recall-precision), suggestions of applicability and planning for deployment.  </p>
 
                     <h4>[ Mobility Students Application Process ]</h4>
                       <p>Process re-engineering and database enhancement. Mapping the To-Be process, analysis of solutions, proposal, prototyping and testing in Qualtrics and Smartsheet. Data collection of partner institutions and preparation for the partner database. Development and maintenance of partner websites in Squiz Matrix CMS and Mobility Application form in Qualtrics. Elaboration of final user documentation for different software solutions.   </p>
@@ -528,7 +541,10 @@
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="bootstrap-4.0.0-alpha.6-dist/js/bootstrap.min.js"></script>
-      <script>
+
+    <script type="text/javascript" src="email.js"></script>  
+    
+    <script>
         $(function () {
           $('[data-toggle="tooltip"]').tooltip()
         })
