@@ -1,14 +1,13 @@
 var emailto = document.getElementById('emailToField');
 var emailfrom = "gonzalezd.juan@gmail.com";
 var subject = "Referees from Juan Gonzalez Dominguez";
-var body = "Thanks for your interest, references' contact details are below:" + '\n' + "Marcus Bingenmann - International Communications Director - Macquarie University" + '\n' + "9850 - xxxx | marcus.bingemann@mq.edu.au" + '\n\n' + "Joe Giunta - International Contact Centre Manager - Macquarie University" + '\n' + "9850 - xxxx | joe.giunta@mq.edu.au" + '\n' + "Please do not hesitate in contact me if further information is required" + '\n' + "Juan Gonzalez";
+var body = "Thank you for your interest. Please find contact details below:" + '\n\n' + "Marcus Bingenmann - International Communications Director - Macquarie University" + '\n' + "9850 - 6300 | marcus.bingemann@mq.edu.au | 0402 484 528" + '\n\n' + "Joe Giunta - International Contact Centre Manager - Macquarie University" + '\n' + "9850 - 6358 | joe.giunta@mq.edu.au | 0414 762 881" + '\n\n' + "Please do not hesitate to contact me if further information is required" + '\n\n' + "Juan Gonzalez";
 var form = document.getElementById('emailform');
 
-form.addEventListener('submit', function(event){
+form.addEventListener('submit', function (event) {
   if (!emailto.value) {
     alert("Please enter values in the fields");
     } else {
-
         var to = emailto.value;
         var email = {"To": to, "CC": emailfrom, "Subject":subject, "Body": body};
         var jsonEmail = JSON.stringify(email);
@@ -23,6 +22,8 @@ form.addEventListener('submit', function(event){
         request.send(jsonEmail);
 
         console.log(request.status);
+        
+        alert("Details are on its way!")
         //console.log(body);
         event.preventDefault();
 
