@@ -16,15 +16,18 @@ form.addEventListener('submit', function (event) {
 
         request.open("POST", "https://hooks.zapier.com/hooks/catch/1511719/ij1zxp/", true);
         request.onreadystatechange = function () {
-        if (request.readyState == 4 && request.status == 200) 
-            console.log(request.responseText);};
+        if (request.readyState == 4 && request.status == 200) {
+            alert("Details are on its way!");
+            console.log(request.responseText);
+        } else {
+            alert("Oops, something went wrong!");
+        }
+        
+        };
+       
         // request.setRequestHeader("Content-type","application-json"); ** problems with Zapier headers that is why headers are not use "Request header field Content-Type is not allowed by Access-Control-Allow-Headers in preflight response."
         request.send(jsonEmail);
 
-        console.log(request.status);
-        
-        alert("Details are on its way!")
-        //console.log(body);
         event.preventDefault();
 
     }});
